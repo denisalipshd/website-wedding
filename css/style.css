@@ -1,0 +1,461 @@
+:root {
+  --coklat: #754e1a;
+  --white: #f1f1f1;
+}
+
+body {
+  font-family: "Work Sans", serif;
+  min-height: 7000px;
+}
+
+.sampul-undangan,
+.home,
+.info {
+  min-height: 100vh;
+  background-image: url(../img/bg1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sampul-undangan img,
+.home img {
+  width: 240px;
+  height: 240px;
+}
+
+.sampul-undangan h2,
+.home h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 3.5rem;
+  color: var(--coklat);
+}
+
+.sampul-undangan .btn-sample {
+  background-color: var(--coklat);
+  color: var(--white);
+}
+
+.sampul-undangan .btn-sample a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.sampul-undangan .btn-sample i {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+.countdown {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.time-section {
+  background: var(--coklat);
+  opacity: 0.7;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.time-section:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.time-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  margin: 5px 0;
+}
+
+.time-label {
+  font-size: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  color: var(--coklat);
+}
+
+.info h3 {
+  font-size: 1.8rem;
+  color: #5e5e5e;
+}
+
+.info p {
+  font-size: 1.1rem;
+  color: #5e5e5e;
+}
+
+.couple {
+  margin-top: 80px;
+}
+
+.info .couple h3 {
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  color: var(--coklat);
+}
+
+.info .couple img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.date {
+  background-image: url(../img/bg1.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10px;
+}
+
+.date .bg-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/tangan4.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+}
+
+.date h2 {
+  font-family: "Sacramento", cursive, Arial, sans-serif;
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.date .list-acara {
+  padding: 1.5rem 1rem;
+}
+
+.date .card-date-custom {
+  margin-bottom: 22px;
+}
+
+.date .card h3 {
+  font-family: "Sacramento", cursive;
+  font-size: 2.5rem;
+  color: var(--coklat);
+  font-weight: 500;
+}
+
+.date .card {
+  margin: 0 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 22px;
+  background-color: #faf6e3;
+}
+
+.date .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.date .btn-map {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  width: 250px;
+  margin: 0 auto;
+  background-color: var(--coklat);
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.date .btn-map:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.date .map iframe {
+  border-radius: 15px;
+}
+
+.story,
+.gallery {
+  min-height: 100vh;
+  background-color: #a66e38;
+}
+
+.story h2 {
+  padding-top: 100px;
+  color: var(--white);
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+}
+
+.story h3 {
+  font-weight: bold;
+}
+
+.story .card p {
+  color: #5e5e5e;
+}
+
+.story .card {
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.story img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.gallery h2 {
+  padding-top: 70px;
+  color: var(--white);
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.susunan-acara {
+  min-height: 100vh;
+  background-image: url(../img/bg1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.susunan-acara h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  padding-top: 80px;
+  text-align: center;
+  color: var(--coklat, #6c4a39);
+}
+
+.susunan-acara .event h5 {
+  font-family: "Sacramento", cursive;
+  font-size: 2.2rem;
+  color: var(--coklat);
+  font-weight: bold;
+}
+
+.susunan-acara .event-content p {
+  color: #5e5e5e;
+  font-size: 1.1rem;
+}
+
+.susunan-acara .timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.susunan-acara .timeline::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: var(--coklat);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.susunan-acara .event {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.susunan-acara .event:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.susunan-acara .event:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.susunan-acara .event-time {
+  position: absolute;
+  width: 80px;
+  background-color: var(--coklat);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.susunan-acara .event:nth-child(odd) .event-time {
+  right: -100px;
+  top: 20px;
+}
+
+.susunan-acara .event:nth-child(even) .event-time {
+  left: -100px;
+  top: 20px;
+}
+
+.susunan-acara .event-content {
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 -20px;
+  position: relative;
+}
+
+.comment-section {
+  padding: 40px 0;
+  background-image: url(../img/bg1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.comment-section h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  color: var(--coklat);
+}
+
+.wedding-comment-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.btn-comment {
+  display: block;
+  width: auto;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: var(--coklat);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-comment:hover {
+  background-color: #a66e38;
+}
+
+/* Kotak Komentar */
+.comment-box {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: var(--coklat);
+  border-radius: 8px;
+  margin: 30px auto;
+  height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-box h4 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  color: pink;
+  font-size: 2rem;
+}
+
+/* Gaya untuk daftar komentar */
+.comment-list .comment {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.comment-list .comment:last-child {
+  border-bottom: none;
+}
+
+.comment h5 {
+  margin: 0;
+  font-weight: bold;
+  color: pink;
+  font-size: 1.4rem;
+}
+
+.comment p {
+  margin: 5px 0 0;
+  color: var(--white);
+}
+
+/* media query */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 68%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 65%;
+  }
+
+  .sampul-undangan img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .date .list-acara {
+    padding: 1rem;
+  }
+
+  .date .bg-1 {
+    min-height: 200px;
+  }
+
+  .date .btn-map {
+    width: 150px;
+  }
+
+  .susunan-acara .event-content {
+    width: 180px;
+    margin: 0 -50px;
+  }
+}
