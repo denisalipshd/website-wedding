@@ -5,7 +5,50 @@
 
 body {
   font-family: "Work Sans", serif;
-  min-height: 7000px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  width: 80%;
+  height: auto;
+  margin: 0 auto; /* Pusatkan navbar secara horizontal */
+  background-color: var(--coklat);
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Pusatkan di tengah */
+  z-index: 999;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  list-style: none;
+}
+
+.menu-nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+.menu-nav a:hover {
+  color: #ffdd57; /* Warna saat hover */
 }
 
 .sampul-undangan,
@@ -18,9 +61,10 @@ body {
 }
 
 .sampul-undangan img,
-.home img {
-  width: 240px;
-  height: 240px;
+.home img,
+.penutup img {
+  width: 220px;
+  height: 220px;
 }
 
 .sampul-undangan h2,
@@ -377,6 +421,8 @@ body {
   background-color: #a66e38;
 }
 
+
+
 /* Kotak Komentar */
 .comment-box {
   margin-top: 50px;
@@ -419,6 +465,18 @@ body {
   color: var(--white);
 }
 
+.penutup {
+  min-height: 50vh;
+  background-color: var(--coklat);
+  padding: 100px 0;
+}
+
+.penutup p {
+  font-family: "Sacramento";
+  font-size: 3rem;
+  color: var(--white);
+}
+
 /* media query */
 @media (max-width: 992px) {
   html {
@@ -429,6 +487,15 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 68%;
+  }
+
+  .navbar {
+    width: 90%; /* Sesuaikan lebar */
+    bottom: 10px; /* Lebih kecil margin di bawah */
+  }
+
+  .menu-nav a {
+    font-size: 1.5rem; /* Kecilkan teks di layar kecil */
   }
 }
 
