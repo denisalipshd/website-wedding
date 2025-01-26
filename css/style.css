@@ -5,6 +5,12 @@
 
 body {
   font-family: "Work Sans", serif;
+  overflow-x: hidden;
+}
+
+[data-aos] {
+  position: relative;
+  z-index: 1;
 }
 
 html {
@@ -12,14 +18,14 @@ html {
 }
 
 .navbar {
-  width: 80%;
+  width: 70%;
   height: auto;
-  margin: 0 auto; /* Pusatkan navbar secara horizontal */
+  margin: 0 auto;
   background-color: var(--coklat);
   position: fixed;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%); /* Pusatkan di tengah */
+  transform: translateX(-50%);
   z-index: 999;
   border-radius: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -48,7 +54,7 @@ html {
 }
 
 .menu-nav a:hover {
-  color: #ffdd57; /* Warna saat hover */
+  color: #ffdd57;
 }
 
 .sampul-undangan,
@@ -58,6 +64,8 @@ html {
   background-image: url(../img/bg1.jpeg);
   background-size: cover;
   background-position: center;
+  position: relative; /* Pastikan elemen ini memiliki posisi relatif atau statis */
+  overflow: hidden;
 }
 
 .sampul-undangan img,
@@ -74,17 +82,17 @@ html {
   color: var(--coklat);
 }
 
-.sampul-undangan .btn-sample {
+.sampul-undangan .btn-sampul {
   background-color: var(--coklat);
   color: var(--white);
 }
 
-.sampul-undangan .btn-sample a {
+.sampul-undangan .btn-sampul a {
   text-decoration: none;
   color: var(--white);
 }
 
-.sampul-undangan .btn-sample i {
+.sampul-undangan .btn-sampul i {
   font-size: 1.3rem;
   margin-right: 10px;
 }
@@ -97,7 +105,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 7px;
 }
 
 .time-section {
@@ -165,6 +173,8 @@ html {
   background-size: cover;
   background-position: center;
   padding-bottom: 10px;
+  position: relative; /* Pastikan elemen ini memiliki posisi relatif atau statis */
+  overflow: hidden;
 }
 
 .date .bg-1 {
@@ -207,6 +217,7 @@ html {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   border-radius: 22px;
   background-color: #faf6e3;
+  width: 280px;
 }
 
 .date .card:hover {
@@ -216,8 +227,8 @@ html {
 
 .date .btn-map {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  width: 250px;
+  padding: 0.5rem 0.9rem;
+  width: 240px;
   margin: 0 auto;
   background-color: var(--coklat);
   color: var(--white);
@@ -225,7 +236,7 @@ html {
 }
 
 .date .btn-map:hover {
-  background-color: #0056b3;
+  background-color: #a66e38;
   color: #fff;
   transition: background-color 0.3s ease-in-out;
 }
@@ -238,6 +249,8 @@ html {
 .gallery {
   min-height: 100vh;
   background-color: #a66e38;
+  position: relative; /* Pastikan elemen ini memiliki posisi relatif atau statis */
+  overflow: hidden;
 }
 
 .story h2 {
@@ -284,6 +297,8 @@ html {
   background-image: url(../img/bg1.jpeg);
   background-size: cover;
   background-position: center;
+  position: relative; /* Pastikan elemen ini memiliki posisi relatif atau statis */
+  overflow: hidden;
 }
 
 .susunan-acara h2 {
@@ -372,6 +387,8 @@ html {
   background-image: url(../img/bg1.jpeg);
   background-size: cover;
   background-position: center;
+  position: relative; /* Pastikan elemen ini memiliki posisi relatif atau statis */
+  overflow: hidden;
 }
 
 .comment-section h3 {
@@ -420,8 +437,6 @@ html {
 .btn-comment:hover {
   background-color: #a66e38;
 }
-
-
 
 /* Kotak Komentar */
 .comment-box {
@@ -490,12 +505,13 @@ html {
   }
 
   .navbar {
-    width: 90%; /* Sesuaikan lebar */
-    bottom: 10px; /* Lebih kecil margin di bawah */
+    width: 90%;
+    bottom: 10px;
+    max-width: 400px;
   }
 
   .menu-nav a {
-    font-size: 1.5rem; /* Kecilkan teks di layar kecil */
+    font-size: 1.5rem;
   }
 }
 

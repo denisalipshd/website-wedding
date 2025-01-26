@@ -1,29 +1,23 @@
 // countdown js
 const endDate = new Date("2025-11-03T00:00:00");
-
 function updateCountdown() {
   const now = new Date();
   const difference = endDate - now;
-
   if (difference <= 0) {
     document.getElementById("timer").innerHTML = "Countdown Selesai!";
     return;
   }
-
   // Keep the year, month, and day fixed
   document.getElementById("days").textContent = endDate.getDate();
-
   // Calculate remaining hours, minutes, and seconds
   const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
   // Update time elements with leading zeros
   document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
   document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
   document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
 }
-
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
