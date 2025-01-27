@@ -113,7 +113,7 @@ html {
   opacity: 0.7;
   padding: 10px;
   border-radius: 8px;
-  width: 100px;
+  width: 95px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
@@ -124,14 +124,14 @@ html {
 }
 
 .time-value {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: var(--white);
   margin: 5px 0;
 }
 
 .time-label {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 1px;
